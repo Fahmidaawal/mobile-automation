@@ -18,12 +18,10 @@ public class HomePageMenu extends Base {
     public static WebElement topNews;
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]")
     public static WebElement menuNews;
-    @FindBy(id = "br.com.golmobile.nypost:id/turn_on_notifications_item")
-    public static WebElement notifications;
+    @FindBy(id = "br.com.golmobile.nypost:id/turn_on_notifications_item")public static WebElement notifications;
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[3]/android.widget.RelativeLayout/android.widget.TextView")
     public static WebElement emailNewsLetters;
-    @FindBy(id = "contact_fields_email")
-    public static WebElement emailInputBox;
+    @FindBy(id = "contact_fields_email")public static WebElement emailInputBox;
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[5]")
     public static WebElement sports;
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]")
@@ -243,7 +241,6 @@ public class HomePageMenu extends Base {
         sleep(2);
         clickByXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.widget.ViewAnimator/android.widget.FrameLayout/android.support.v4.view.ViewPager/android.widget.ViewAnimator/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]");
     }
-
     public void privacyPolicy() throws InterruptedException {
         menu.click();
         sleep(2);
@@ -272,4 +269,6 @@ public class HomePageMenu extends Base {
         Assert.assertEquals(actual,expected);
         System.out.println(actual);
     }
+
+
 }

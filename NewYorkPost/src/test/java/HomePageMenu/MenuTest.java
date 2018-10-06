@@ -11,7 +11,7 @@ public class MenuTest extends Base {
     HomePageMenu homePageMenu;
     @BeforeMethod
     public void init (){
-        homePageMenu = PageFactory.initElements(ad,HomePageMenu.class);
+        homePageMenu = PageFactory.initElements(ad, HomePageMenu.class);
     }
     @Test(priority = 2, enabled = false)
     public void menuSearchBoxTest() throws InterruptedException {
