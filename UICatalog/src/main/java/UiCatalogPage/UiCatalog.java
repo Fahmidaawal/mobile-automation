@@ -30,7 +30,6 @@ public class UiCatalog extends Base {
         //store mobile elements into ArrayList
         elements = ad.findElements(By.xpath("//XCUIElementTypeApplication/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell"));
     }
-
     public Buttons getButtonPage(){
         page();
         elements.get(0).click();
@@ -91,5 +90,4 @@ public class UiCatalog extends Base {
         elements.get(11).click();
         return new Transitions();
     }
-
 }

@@ -4,24 +4,24 @@ import common.Base;
 
 public class Alerts extends Base{
     public void showActionSheetSimple(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[1]");
+        clickByXpath("(//XCUIElementTypeStaticText[@name=\"Show Simple\"])[1]");
     }
     public void showActionSheetOkCancel(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[3]");
+        clickByXpath("(//XCUIElementTypeStaticText[@name=\"Show OK-Cancel\"])[1]");
     }
     public void showActionSheetCustom(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[5]");
+        clickByXpath("//XCUIElementTypeStaticText[@name=\"Show Customized\"]");
     }
     public void showAlertSimple(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[7]");
+        clickByXpath("(//XCUIElementTypeStaticText[@name=\"Show Simple\"])[2]\n");
     }
     public void showAlertOkCancel(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[9]");
+        clickByXpath("(//XCUIElementTypeStaticText[@name=\"Show OK-Cancel\"])[2]");
     }
     public void showAlertCustom(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[11]");
+        clickByXpath("//XCUIElementTypeStaticText[@name=\"Show Custom\"]");
     }
     public void showSecureTextInput(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[13]");
+        clickByXpath("//XCUIElementTypeStaticText[@name=\"Secure Text Input\"]");
     }
 }

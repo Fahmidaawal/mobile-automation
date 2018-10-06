@@ -18,7 +18,7 @@ public class Picker extends Base {
     List<WebElement> segmentControl = new ArrayList<WebElement>();
 
     public void getUIPicker(){
-        segmentControl.get(0).click();
+        segmentControl.get(5).click();
     }
     public void getUIDatePicker(){
         segmentControl.get(1).click();
@@ -26,6 +26,4 @@ public class Picker extends Base {
     public void getCustom(){
         segmentControl.get(2).click();
     }
-
-
 }
